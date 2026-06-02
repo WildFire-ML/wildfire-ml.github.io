@@ -13,7 +13,7 @@ title                    : "LAB_NAME"
 title_separator          : "-"
 name                     : &name "LAB_NAME"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://wildfire-ml.github.io/ # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://wildfire-ml.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "wildfire-ml/wildfire-ml.github.io"
@@ -24,9 +24,9 @@ repository               : "wildfire-ml/wildfire-ml.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "LAB_NAME"
+  name             : "Wildfire Lab"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "The [lab name] lab is led by Dr. Jeff Boisvert in the Department of Civil and Environmental Engineering at the University of Alberta. Our interdisciplinary research develops machine learning and remote sensing methods that address challenges in forestry, wildfire science, wildfire preparedness, and wildfire response. We aim to create innovative solutions that enable and support informed decision-making for communities preparing for wildfire, emergency responders managing wildfire events, and organizations responsible for protecting people, infrastructure, and our natural resources." # Update this with a short biography or description of yourself or your lab
   location         : "Edmonton, AB"
   employer         : "University of Alberta"
   uri              : # URL

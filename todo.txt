@@ -1,0 +1,8 @@
+1. Main page
+2. Publications
+3. People
+4. Blog posts
+5. Style
+6. Lab name
+7. Lab logo
+8. Land acknowledgement
