@@ -81,7 +81,7 @@ _data/
 _pages/
   publications.html  ← Publications page (no editing needed)
   people.html        ← People page (no editing needed)
-  year-archive.html  ← Blog Posts page (no editing needed)
+  blog.html  ← Blog Posts page (no editing needed)
 _publications/       ← one .md file per paper
 _people/             ← one .md file per person
 _posts/              ← one .md file per blog post
