@@ -8,18 +8,13 @@
 # Tags are optional — delete them if not needed.
 # =============================================================================
 
-title:   "Blog Post Number 1"
-date:    2012-08-14
-permalink: /posts/2012/08/blog-post-1/
+title:   "We are recruiting!"
+date:    2026-06-02
+permalink: /posts/2026/06/recruiting2026/
 tags:
-  - cool posts
-  - category1
+  - recruiting
 ---
 
-Write your post content here using standard **Markdown** formatting.
+## We are recruiting!
 
-You can use headers, bullet lists, [links](https://example.com), images, and code blocks.
-
-## A Heading
-
-More content here.
+We are actively recruiting MSc. and PhD positions. Applicants should have an interest and background in machine learning, remote sensing, wildfire, and forestry. Inquiries should be sent to [lgbennet@ualberta.ca](mailto:lgbennet@ualberta.ca)
