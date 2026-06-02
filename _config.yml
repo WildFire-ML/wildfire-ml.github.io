@@ -1,54 +1,71 @@
-# Basic Site Settings
-locale: "en-US"
-site_theme: "ember"
-title: "Wildfire ML Lab"
-title_separator: "-"
-name: &name "Wildfire ML Lab"
-description: &description "Wildfire machine learning research at the University of Alberta"
-url: https://wildfire-ml.github.io
-baseurl: ""
-repository: "wildfire-ml/wildfire-ml.github.io"
+# =============================================================================
+# WILDFIRE ML LAB - SITE CONFIGURATION
+# =============================================================================
+# This file controls the basic settings of the website.
+# Edit the values under each section to update site info, author details, etc.
+# Lines starting with # are comments and are ignored by Jekyll.
+# =============================================================================
 
-# Site Author
+# --- Basic Site Info ---
+locale:           "en-US"
+site_theme:       "ember"        # Only "ember" is included. Do not change.
+title:            "Wildfire ML Lab"
+title_separator:  "-"
+name:             "Wildfire ML Lab"
+description:      "Wildfire machine learning research at the University of Alberta"
+url:              https://wildfire-ml.github.io
+baseurl:          ""
+repository:       "wildfire-ml/wildfire-ml.github.io"
+
+# --- Sidebar Author Profile ---
+# This appears in the left sidebar on every page.
 author:
-  avatar: "profile.png"
-  name: "Wildfire ML Lab"
-  bio: "The Wildfire ML lab is led by Dr. Jeff Boisvert in the Department of Civil and Environmental Engineering at the University of Alberta. Our interdisciplinary research develops machine learning and remote sensing methods that address challenges in forestry, wildfire science, wildfire preparedness, and wildfire response."
-  location: "Edmonton, AB"
-  employer: "University of Alberta"
-  github: "wildfire-ml"
-  googlescholar:
-  orcid:
-  email:
+  avatar:       "profile.png"   # Image filename inside /images/
+  name:         "Wildfire ML Lab"
+  bio:          "The Wildfire ML lab is led by Dr. Jeff Boisvert in the Department of Civil and Environmental Engineering at the University of Alberta. Our interdisciplinary research develops machine learning and remote sensing methods that address challenges in forestry, wildfire science, wildfire preparedness, and wildfire response."
+  location:     "Edmonton, AB"
+  employer:     "University of Alberta"
+  github:       "wildfire-ml"   # GitHub username (no @)
+  googlescholar:                # Paste full URL here if desired
+  orcid:                        # Paste full URL here if desired
+  email:                        # e.g. labname@ualberta.ca
 
-# Publication categories
+# --- Publication Categories ---
+# Controls how publications are grouped on the Publications page.
+# Add or remove categories here as needed.
 publication_category:
   manuscripts:
     title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
-# Site Settings
-breadcrumbs: false
+# --- Site Settings ---
+breadcrumbs:      false
 words_per_minute: 160
-future: false
-read_more: "disabled"
-talkmap_link: false
+future:           false
+read_more:        "disabled"
 
-# Analytics
+# --- Analytics ---
+# Set provider to "google-analytics-4" and add your tracking ID to enable.
 analytics:
   provider: "false"
+  # google:
+  #   tracking_id: "G-XXXXXXXXXX"
 
-# Reading Files
+# --- Jekyll Configuration ---
+# You should not need to edit anything below this line.
+
 include:
   - .htaccess
   - _pages
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
   - .github
+  - .devcontainer
   - .jekyll-assets-cache
   - .sass-cache
   - assets/js/_main.js
@@ -58,40 +75,46 @@ exclude:
   - Gemfile
   - LICENSE
   - node_modules
-  - package.json*
-  - README
+  - package.json
+  - README.md
   - tmp
   - vendor
+  - markdown_generator
+  - scripts
   - talkmap
   - talkmap.ipynb
   - talkmap.py
   - talkmap_out.ipynb
-  - markdown_generator
-  - scripts
+  - todo.txt
+  - docker-compose.yaml
+  - CONTRIBUTING.md
+  - _drafts
+
 keep_files:
   - .git
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Conversion
-markdown: kramdown
+encoding:       "utf-8"
+markdown_ext:   "markdown,mkdown,mkdn,mkd,md"
+
+# --- Markdown ---
+markdown:    kramdown
 highlighter: rouge
-lsi: false
+lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections
+# --- Collections ---
+# "publications" and "people" are content folders that work like _posts.
 collections:
   publications:
     output: true
@@ -100,73 +123,62 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Page defaults
+# --- Page Defaults ---
+# Sets default layout and sidebar behaviour per content type.
 defaults:
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
+      layout:         single
       author_profile: true
-      read_time: true
-      share: false
-      related: false
+      read_time:      true
+      share:          false
+      related:        false
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
+      layout:         single
       author_profile: true
   - scope:
       path: ""
       type: publications
     values:
-      layout: single
+      layout:         single
       author_profile: false
-      share: false
+      share:          false
   - scope:
       path: ""
       type: people
     values:
-      layout: single
+      layout:         single
       author_profile: true
-      share: false
+      share:          false
 
-# Sass/SCSS
+# --- Sass/SCSS ---
 sass:
   sass_dir: _sass
-  style: compressed
+  style:    compressed
 
-# Outputting
+# --- Permalinks & Timezone ---
 permalink: /:categories/:title/
-timezone: Etc/UTC
+timezone:  Etc/UTC
 
-# Plugins
+# --- Plugins ---
 plugins:
   - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
 whitelist:
   - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-redirect-from
-  - jemoji
 
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# HTML Compression
+# --- HTML Compression ---
 compress_html:
   clippings: all
   ignore:

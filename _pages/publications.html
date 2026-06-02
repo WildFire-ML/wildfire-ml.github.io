@@ -1,15 +1,18 @@
 ---
 layout: archive
 title: "Publications"
-permalink: /Publications/
+permalink: /publications/
 author_profile: true
 ---
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+<!-- Renders publications grouped by category (e.g. Journal Articles, Conference Papers).
+     Categories are defined in _config.yml under publication_category.
+     Each publication is a .md file in the _publications/ folder. -->
+
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
@@ -27,6 +30,3 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-

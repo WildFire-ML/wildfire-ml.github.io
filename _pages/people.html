@@ -7,8 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
+<!-- Lists everyone from the _people/ folder.
+     Each person is a .md file in _people/. -->
 
 {% for post in site.people %}
   {% include archive-single.html %}
 {% endfor %}
-
