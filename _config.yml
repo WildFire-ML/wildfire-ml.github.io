@@ -1,6 +1,6 @@
 # Basic Site Settings
 locale: "en-US"
-site_theme: "mint"
+site_theme: "ember"
 title: "Wildfire ML Lab"
 title_separator: "-"
 name: &name "Wildfire ML Lab"
