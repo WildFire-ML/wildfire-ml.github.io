@@ -1,5 +1,5 @@
 # =============================================================================
-# WILDFIRE ML LAB - SITE CONFIGURATION
+# Boisvert Wildfire Intelligence Lab - SITE CONFIGURATION
 # =============================================================================
 # This file controls the basic settings of the website.
 # Edit the values under each section to update site info, author details, etc.
@@ -9,10 +9,10 @@
 # --- Basic Site Info ---
 locale:           "en-US"
 site_theme:       "ember"        # Only "ember" is included. Do not change.
-title:            "Wildfire ML Lab"
+title:            "Boisvert Wildfire Intelligence Lab"
 title_separator:  "-"
-name:             "Wildfire ML Lab"
-description:      "Wildfire machine learning research at the University of Alberta"
+name:             "Boisvert Wildfire Intelligence Lab"
+description:      "Wildfire intelligence research at the University of Alberta"
 url:              https://wildfire-ml.github.io
 baseurl:          ""
 repository:       "wildfire-ml/wildfire-ml.github.io"
@@ -20,9 +20,9 @@ repository:       "wildfire-ml/wildfire-ml.github.io"
 # --- Sidebar Author Profile ---
 # This appears in the left sidebar on every page.
 author:
-  avatar:       "profile.png"   # Image filename inside /images/
-  name:         "Wildfire ML Lab"
-  bio:          "The Wildfire ML lab is led by Dr. Jeff Boisvert in the Department of Civil and Environmental Engineering at the University of Alberta. Our interdisciplinary research develops machine learning and remote sensing methods that address challenges in forestry, wildfire science, wildfire preparedness, and wildfire response."
+  avatar:       "logo.png"   # Image filename inside /images/
+  name:         "Boisvert Wildfire Intelligence Lab"
+  bio:          "The Boisvert Wildfire Intelligence Lab is led by Dr. Jeff Boisvert in the Department of Civil and Environmental Engineering at the University of Alberta. Our interdisciplinary research develops machine learning and remote sensing methods that address challenges in forestry, wildfire science, wildfire preparedness, and wildfire response."
   location:     "Edmonton, AB"
   employer:     "University of Alberta"
   github:       "wildfire-ml"   # GitHub username (no @)
@@ -37,7 +37,7 @@ publication_category:
   manuscripts:
     title: 'Journal Articles'
   conferences:
-    title: 'Conference Papers'
+    title: 'Conferences'
 
 # --- Site Settings ---
 breadcrumbs:      false

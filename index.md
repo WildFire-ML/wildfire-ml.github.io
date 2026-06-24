@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Wildfire ML Lab"
+title: "Boisvert Wildfire Intelligence Lab"
 author_profile: true
 ---
 
-Welcome to the Wildfire ML Lab at the University of Alberta.
+Welcome to the Boisvert Wildfire Intelligence Lab at the University of Alberta.
 
 Our interdisciplinary research develops machine learning and remote sensing methods
 that address challenges in forestry, wildfire science, wildfire preparedness, and

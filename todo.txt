@@ -3,6 +3,7 @@
 3. People
 4. Blog posts
 5. Style
-6. Lab name
-7. Lab logo
-8. Land acknowledgement
+
+add asi
+
+bundle exec jekyll serve

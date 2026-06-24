@@ -12,7 +12,7 @@
 title:      "Image to attribute model for trees (ITAM-T): individual tree detection and classification in Alberta boreal forest for wildland fire fuel characterization."
 collection: publications
 category:   manuscripts         # Use: manuscripts OR conferences
-permalink:  /publication/itam-t
+permalink:  /publication/itamt2022
 excerpt:    "This paper develops a deep learning workflow that detects and classifies individual trees from high-resolution RGB drone imagery, enabling the creation of accurate tree inventory and fuel maps that can support wildfire hazard assessment, management, and response."
 date:       2022-02-25         # Publication date: YYYY-MM-DD
 venue:      "International Journal of Remote Sensing"

@@ -205,14 +205,22 @@
   .visible-links {
     display: table;
 
+      /* ADD THIS: */
+    @media (max-width: 600px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     li {
       display: table-cell;
       vertical-align: middle;
 
-      &:first-child {
-        font-weight: bold;
-        text-wrap: wrap;
+      @media (max-width: 600px) {
+      display: block;
+      }
 
+      &:first-child {
         a {
           margin-left: 0;
         }

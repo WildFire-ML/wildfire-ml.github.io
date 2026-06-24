@@ -9,7 +9,9 @@ author_profile: true
 
 <!-- Renders publications grouped by category (e.g. Journal Articles, Conference Papers).
      Categories are defined in _config.yml under publication_category.
-     Each publication is a .md file in the _publications/ folder. -->
+     Manuscripts use archive-single.html for a full entry with its own page.
+     Conferences are rendered from a single combined post's body content,
+     since all conference citations now live in one file. -->
 
 {% if site.publication_category %}
   {% for category in site.publication_category %}
@@ -22,7 +24,11 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% if post.category == "conferences" %}
+        {{ post.content }}
+      {% else %}
+        {% include archive-single.html %}
+      {% endif %}
     {% endfor %}
   {% endfor %}
 {% else %}
