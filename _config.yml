@@ -28,7 +28,7 @@ author:
   github:       "wildfire-ml"   # GitHub username (no @)
   googlescholar:                # Paste full URL here if desired
   orcid:                        # Paste full URL here if desired
-  email:                        # e.g. labname@ualberta.ca
+  email:        "lgbennet@ualberta.ca"                # e.g. labname@ualberta.ca
 
 # --- Publication Categories ---
 # Controls how publications are grouped on the Publications page.

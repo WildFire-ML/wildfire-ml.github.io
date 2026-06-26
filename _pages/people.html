@@ -7,9 +7,36 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Lists everyone from the _people/ folder.
-     Each person is a .md file in _people/. -->
-
-{% for post in site.people %}
+<h2>Staff</h2>
+{% assign staff = site.people | where: "role", "staff" %}
+{% for post in staff %}
   {% include archive-single.html %}
 {% endfor %}
+
+<!-- <h2>Postdocs</h2>
+{% assign postdocs = site.people | where: "role", "postdoc" %}
+{% for post in postdocs %}
+  {% include archive-single.html %}
+{% endfor %} -->
+
+<h2>Graduate Students</h2>
+{% assign grads = site.people | where: "role", "graduate" %}
+{% for post in grads %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2>Undergraduate Students</h2>
+<ul>
+{% assign undergrad_entry = site.people | where: "role", "undergrad" | first %}
+{% for person in undergrad_entry.list %}
+  <li>{{ person.name }}{% if person.note %} &mdash; {{ person.note }}{% endif %}</li>
+{% endfor %}
+</ul>
+
+<h2>Alumni</h2>
+<ul>
+{% assign alumni_entry = site.people | where: "role", "alumni" | first %}
+{% for person in alumni_entry.list %}
+  <li>{{ person.name }}{% if person.note %} &mdash; {{ person.note }}{% endif %}</li>
+{% endfor %}
+</ul>
